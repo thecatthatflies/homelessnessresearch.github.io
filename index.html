@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homelessness Awareness</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2C3E50, #4CA1AF);
+            color: #ffffff;
+            overflow-x: hidden;
+            animation: gradientShift 10s infinite;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background: linear-gradient(135deg, #2C3E50, #4CA1AF);
+            }
+            50% {
+                background: linear-gradient(135deg, #4CA1AF, #2C3E50);
+            }
+            100% {
+                background: linear-gradient(135deg, #2C3E50, #4CA1AF);
+            }
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(10, 25, 47, 0.9);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+            font-weight: 700;
+            color: #E74C3C;
+        }
+
+        header nav a {
+            color: #ECF0F1;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #E74C3C;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: rgba(10, 25, 47, 0.7);
+            background-blend-mode: overlay;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .hero h2 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #E74C3C;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            line-height: 1.5;
+            color: #ECF0F1;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 15px 35px;
+            background: #E74C3C;
+            border: none;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hero button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(231, 76, 60, 0.6);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #E74C3C;
+            display: inline-block;
+            padding-bottom: 5px;
+            color: #ECF0F1;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #ECF0F1;
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: #ECF0F1;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer p a {
+            color: #E74C3C;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="color: #E74C3C; text-decoration: none;">Homelessness Awareness</a></h1>
+	<nav>
+    		<a href="overview.html">About</a>
+    		<a href="causes.html">Causes</a>
+    		<a href="help.html">How to Help</a>
+            <a href="help.html">How to Help</a>
+	</nav>
+    </header>
+
+    <section class="hero">
+        <h2>Beyond Shelter</h2>
+        <p>Understanding homelessness starts with recognizing the stories of those affected. Let's work together to make a difference.</p>
+        <button>Learn More</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Homelessness Awareness . All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
